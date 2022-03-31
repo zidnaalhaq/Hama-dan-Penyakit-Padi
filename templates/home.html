@@ -1,0 +1,19 @@
+{% extends 'layout.html' %} {% block title %} Halaman Utama {% endblock %} {% block body %}
+<div class="container-fluid">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center">HALAMAN UTAMA</h1>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12">
+                <form action="/main">
+                    <input class="btn btn-primary d-grid gap-2 col-2 mx-auto" type="submit" value="Start" />
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <!-- /.container -->
+    {% endblock %}

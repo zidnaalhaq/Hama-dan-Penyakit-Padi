@@ -1,0 +1,69 @@
+{% extends 'layout.html' %} {% block title %} Home {% endblock %} {% block body %}
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Gejala Penyakit</h1>
+            </div>
+        </div>
+        <form action="/result" method="POST">
+            <div class="row mt-2">
+                <div class="col-10">
+                    <select class="form-control" id="ciri1" name="ciri1">
+                        <option selected>Gejala 1</option>
+                        <option value="0">Daun tergulung</option>
+                        <option value="1">Tersisa tulang tulang daun</option>
+                        <option value="2">Terbentuk gelembung-gelembung pada daun</option>
+                        <option value="3">Bibit berubah warna menjadi kekuningan</option>
+                        <option value="4">Tanaman menjadi layu</option>
+                        <option value="5">Daun terdapat bercak-bercak bekas isapan</option>
+                        <option value="6">Tanaman Roboh</option>
+                        <option value="7">Tangkai patah</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10 mt-2">
+                    <select class="form-control" id="ciri2" name="ciri2">
+                        <option selected>Gejala 2</option>
+                        <option value="0">Daun berubah warna menjadi kuning</option>
+                        <option value="1">Tampak bekas keratan ulat</option>
+                        <option value="2">Tunas tidak dapat berbunga</option>
+                        <option value="3">Bibit menjadi layu dan</option>
+                        <option value="4">Daun mengalami perubahan warna</option>
+                        <option value="5">Buah terdapat bintik-bintik hitam bekas tusukan hama</option>
+                        <option value="6">Pucuk mudah dicabut</option>
+                        <option value="7">Terdapat bekas keratan tikus</option>
+                        <option value="8">Buah mudah rontok</option>
+                        <option value="9">Daun sobek</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-10">
+                    <select class="form-control" id="ciri3" name="ciri3">
+                        <option selected>Gejala 3</option>
+                        <option value="0">Beberapa gabah tidak berisi</option>
+                        <option value="1">Terlihat potongan tangkai mati</option>
+                        <option value="2">Warnanya hijau kekuningan</option>
+                        <option value="3">Bibit Mudah dicabut</option>
+                        <option value="4">Tanaman mudah Roboh</option>
+                        <option value="5">Buah hampa</option>
+                        <option value="6">Daun menjadi kering</option>
+                        <option value="7">Padi yang masih muda tampak botak</option>
+                        <option value="8">Burung-burung pemakan padi berkeliaran disekitar tananaman padi</option>
+                        <option value="9">Daun habis tinggal tulang</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary my-1">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}
